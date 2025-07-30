@@ -4,7 +4,7 @@
 
 A modern Android news application built to showcase a robust MVVM architecture, fetching live data from a REST API and persisting data for offline access. This project demonstrates key skills in modern Android development.
 
-
+Project Timeline: May 2024 – September 2024
 
 !\[App Screenshot](screenshots/news-app-demo.png)  ---
 
