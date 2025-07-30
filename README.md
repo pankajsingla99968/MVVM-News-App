@@ -1,78 +1,37 @@
-\# MVVM News Application
+# MVVM News Application
 
+A modern Android news application demonstrating a robust MVVM architecture. The app fetches live data from a REST API and persists it for offline access, highlighting key skills in modern Android development.
 
+**Project Timeline:** May 2024 – September 2024
 
-A modern Android news application built to showcase a robust MVVM architecture, fetching live data from a REST API and persisting data for offline access. This project demonstrates key skills in modern Android development.
+## Key Features
 
-Project Timeline: May 2024 – September 2024
+- **Live Headlines:** Fetches and displays top headlines from the [NewsAPI.org](https://newsapi.org) service in real-time.
+- **Search Functionality:** Users can search for articles on any topic.
+- **Saved Articles:** Favorite articles can be saved for offline reading.
+- **Web View:** Read full articles within the app via an integrated WebView.
 
-!\[App Screenshot](screenshots/news-app-demo.png)  ---
+## Tech Stack & Architecture
 
+This project uses a modern technology stack and follows the recommended MVVM architecture pattern.
 
+- **Language:** Kotlin
+- **Architecture:** MVVM (Model-View-ViewModel)
+- **Asynchronous Programming:** Kotlin Coroutines
+- **Networking:** Retrofit2 (REST API communication)
+- **Database:** Room (local data persistence for saved articles)
+- **UI:** XML layouts, Android Views (RecyclerView with DiffUtil)
+- **Navigation:** Jetpack Navigation Component
+- **Image Loading:** Glide
 
-\## Key Features
+## Setup
 
+To run this project, please obtain your own API key from [NewsAPI.org](https://newsapi.org):
 
-
-\- \*\*Live Headlines:\*\* Fetches and displays top headlines from the \[NewsAPI.org](https://newsapi.org) service in real-time.
-
-\- \*\*Search Functionality:\*\* Allows users to search for articles on any topic.
-
-\- \*\*Saved Articles:\*\* Users can save their favorite articles to read later, even without an internet connection.
-
-\- \*\*Web View:\*\* Articles can be opened and read within the app using an integrated WebView.
-
-
-
----
-
-
-
-\## Tech Stack \& Architecture
-
-
-
-This project is built with a modern technology stack and follows the recommended MVVM architecture pattern.
-
-
-
-\- \*\*Language:\*\* Kotlin
-
-\- \*\*Architecture:\*\* MVVM (Model-View-ViewModel)
-
-\- \*\*Asynchronous Programming:\*\* Kotlin Coroutines
-
-\- \*\*Networking:\*\* Retrofit2 for REST API communication
-
-\- \*\*Database:\*\* Room for local data persistence (saving articles)
-
-\- \*\*UI:\*\* XML with Android Views (RecyclerView with DiffUtil)
-
-\- \*\*Navigation:\*\* Jetpack Navigation Component
-
-\- \*\*Image Loading:\*\* Glide
-
-
-
----
-
-
-
-\## Setup
-
-
-
-To run this project, you need to get your own API key from \[NewsAPI.org](https://newsapi.org).
-
-
-
-1\.  Get your free API key from the NewsAPI website.
-
-2\.  Open the project in Android Studio.
-
-3\.  In the `local.properties` file, add the following line:
-
-&nbsp;   `apiKey="YOUR\_API\_KEY\_HERE"`
-
-4\.  Build and run the app.
-
+1. Sign up and get a free API key from NewsAPI.
+2. Open the project in Android Studio.
+3. In your `local.properties` file, add:
+   ```
+   apiKey="YOUR_API_KEY_HERE"
+   ```
+4. Build and run the app.
